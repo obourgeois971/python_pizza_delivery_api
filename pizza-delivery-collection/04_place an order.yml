@@ -1,0 +1,25 @@
+info:
+  name: 04_place an order
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8000/orders/order
+  headers:
+    - name: Authorization
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzgxNzI4ODEwLCJuYmYiOjE3ODE3Mjg4MTAsImp0aSI6ImU1MzU2NWRmLWM1MjUtNDZiNS1iMzQ1LTE4NDJkNTgyMmFjZCIsImV4cCI6MTc4MTcyOTcxMCwidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.6-URBzkv0xkrNTshB0ZrUhXMYJlIgLlk3cDeMwrXMX4
+  body:
+    type: json
+    data: |-
+      {
+        "pizza_size":"LARGE",
+        "quantity":2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

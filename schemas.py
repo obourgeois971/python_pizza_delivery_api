@@ -29,3 +29,19 @@ class LoginModule(BaseModel):
     username:str
     password:str
 
+class OrderModel(BaseModel):
+    id:Optional[int]=None
+    quantity:int
+    order_status:Optional[str]="PENDING"
+    pizza_size:Optional[str]="SMALL"
+    user_id:Optional[int]
+
+    model_config = ConfigDict(
+        from_attributes=True,
+        json_schema_extra={
+            "example": {
+                "quantity": 2,
+                "pizza_size":"LARGE"
+            }
+        }
+    )
