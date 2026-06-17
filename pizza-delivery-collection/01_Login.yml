@@ -4,6 +4,7 @@ info:
   seq: 1
 
 http:
+<<<<<<< HEAD
   method: POST
   url: http://localhost:8000/auth/login
   body:
@@ -13,6 +14,10 @@ http:
         "username":"johndoe",
         "password":"password"
       }
+=======
+  method: GET
+  url: http://localhost:8000
+>>>>>>> 77506d20311dc50f2afcc28ceae556c637af61a3
   auth: inherit
 
 settings:
