@@ -1,0 +1,24 @@
+info:
+  name: 12_update an order status
+  type: http
+  seq: 12
+
+http:
+  method: PATCH
+  url: http://localhost:8000/orders/order/update/1/
+  headers:
+    - name: Authorization
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXRtYW4iLCJpYXQiOjE3ODE3ODcyODEsIm5iZiI6MTc4MTc4NzI4MSwianRpIjoiYmU3YmNlM2QtMjZmMy00ZmQ1LTg4NWEtM2MwM2E0NjhmZDQ0IiwiZXhwIjoxNzgxNzg4MTgxLCJ0eXBlIjoiYWNjZXNzIiwiZnJlc2giOmZhbHNlfQ.X56o-ZaScy7TcwrgzZMsmJsqNICNsLc5awvN06guwvk
+  body:
+    type: json
+    data: |-
+      {
+        "order_status": "IN-TRANSIT"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
