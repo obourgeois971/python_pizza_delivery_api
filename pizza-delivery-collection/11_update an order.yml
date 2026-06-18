@@ -1,17 +1,21 @@
 info:
-  name: 09_get current users orders
+  name: 11_update an order
   type: http
-  seq: 9
+  seq: 11
 
 http:
-  method: GET
-  url: http://localhost:8000/orders/user/orders
+  method: PUT
+  url: http://localhost:8000/orders/order/update/1/
   headers:
     - name: Authorization
       value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXRtYW4iLCJpYXQiOjE3ODE3ODYxNzQsIm5iZiI6MTc4MTc4NjE3NCwianRpIjoiZGE3NDUxMzQtN2I5MC00YmVlLWExMDktZjM0ODhkYzQ3MzRiIiwiZXhwIjoxNzgxNzg3MDc0LCJ0eXBlIjoiYWNjZXNzIiwiZnJlc2giOmZhbHNlfQ.Oy2nM-FJ3oWvjKyQNu4YL5ylaIn7RPZ96MukfU1VMag
   body:
     type: json
-    data: ""
+    data: |-
+      {
+        "quantity": 22,
+        "pizza_size":"LARGE"
+      }
   auth: inherit
 
 settings:
