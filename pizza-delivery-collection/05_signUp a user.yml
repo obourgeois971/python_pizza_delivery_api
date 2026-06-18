@@ -1,7 +1,7 @@
 info:
-  name: 06_signUp a user
+  name: 05_signUp a user
   type: http
-  seq: 6
+  seq: 5
 
 http:
   method: POST

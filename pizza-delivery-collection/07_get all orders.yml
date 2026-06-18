@@ -1,7 +1,7 @@
 info:
-  name: 05_get all orders
+  name: 07_get all orders
   type: http
-  seq: 5
+  seq: 7
 
 http:
   method: GET

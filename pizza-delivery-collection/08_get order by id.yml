@@ -1,0 +1,21 @@
+info:
+  name: 08_get order by id
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: http://localhost:8000/orders/orders/1
+  headers:
+    - name: Authorization
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXRtYW4iLCJpYXQiOjE3ODE3NzQ2NzAsIm5iZiI6MTc4MTc3NDY3MCwianRpIjoiNDliYWQzZTQtNGNjNi00ODkwLWI5YmYtYTJiNDJlZjI5YTBiIiwiZXhwIjoxNzgxNzc1NTcwLCJ0eXBlIjoiYWNjZXNzIiwiZnJlc2giOmZhbHNlfQ.eWJO7wz_ZJhMsy_Dt0yCBY8Rsr3MxQk57PB5xfJXwRw
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
