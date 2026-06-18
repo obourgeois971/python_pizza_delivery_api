@@ -5,10 +5,10 @@ info:
 
 http:
   method: DELETE
-  url: http://localhost:8000/orders/order/delete1/
+  url: http://localhost:8000/orders/order/delete/1/
   headers:
     - name: Authorization
-      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXRtYW4iLCJpYXQiOjE3ODE3ODcyODEsIm5iZiI6MTc4MTc4NzI4MSwianRpIjoiYmU3YmNlM2QtMjZmMy00ZmQ1LTg4NWEtM2MwM2E0NjhmZDQ0IiwiZXhwIjoxNzgxNzg4MTgxLCJ0eXBlIjoiYWNjZXNzIiwiZnJlc2giOmZhbHNlfQ.X56o-ZaScy7TcwrgzZMsmJsqNICNsLc5awvN06guwvk
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzgxNzg3ODkxLCJuYmYiOjE3ODE3ODc4OTEsImp0aSI6IjRlNTc0YWM3LTUxYjItNDkyNy04OGE4LTUxY2YyZjE3YjNkOSIsImV4cCI6MTc4MTc4ODc5MSwidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.21zDMwdhs3mXfpy_hDN3TacgM59OziaE_AK4-RkQGEA
   body:
     type: json
     data: ""

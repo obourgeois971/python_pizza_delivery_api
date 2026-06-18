@@ -8,7 +8,7 @@ http:
   url: http://localhost:8000/orders/user/order/1
   headers:
     - name: Authorization
-      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzgxNzg1NjY2LCJuYmYiOjE3ODE3ODU2NjYsImp0aSI6IjZlNDY4ZTUyLTdhNGItNDk4NC05ZjVlLTdiMzEyZDNkODM3MSIsImV4cCI6MTc4MTc4NjU2NiwidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.dS7CDrmlURAM8APELR-E4EASX56DNdrl8fEkcbPdoeg
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzgxNzg3ODkxLCJuYmYiOjE3ODE3ODc4OTEsImp0aSI6IjRlNTc0YWM3LTUxYjItNDkyNy04OGE4LTUxY2YyZjE3YjNkOSIsImV4cCI6MTc4MTc4ODc5MSwidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.21zDMwdhs3mXfpy_hDN3TacgM59OziaE_AK4-RkQGEA
   body:
     type: json
     data: ""
