@@ -1,0 +1,25 @@
+info:
+  name: 07_login_admin
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:8000/auth/login
+  headers:
+    - name: Authorization
+      value: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzgxNzA0MzYwLCJuYmYiOjE3ODE3MDQzNjAsImp0aSI6IjE4ZTc1MTJjLTFiYTUtNGFhZC1iYTk2LTZjOWU1NDYyNTk4NCIsImV4cCI6MTc4MTcwNTI2MCwidHlwZSI6ImFjY2VzcyIsImZyZXNoIjpmYWxzZX0.dczE1kMunRJSHjkKNlF59321C1_WFZaxM68nH7OJBkI
+  body:
+    type: json
+    data: |-
+      {
+        "username":"batman",
+        "password":"password"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
